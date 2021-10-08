@@ -1,0 +1,20 @@
+首先做出无线
+SJW Z
+============================
+SJWZ-OF-12-CS3650-1#show run int gi 1/0/47
+Building configuration...
+
+Current configuration : 328 bytes
+!
+interface GigabitEthernet1/0/47
+ description ***WANport_To_SJWZ-OF-12-CS871-1***
+ no switchport
+ ip address 140.231.195.30 255.255.255.252
+ no logging event link-status
+ speed 100
+ duplex full
+ no snmp trap link-status
+ no mdix auto
+ service-policy input FROM-DISTRIBUTION-REMARKING
+ service-policy output EGRESS-QUEUING
+end
