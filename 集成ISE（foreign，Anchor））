@@ -19,3 +19,4 @@ interface GigabitEthernet1/0/47
  service-policy input FROM-DISTRIBUTION-REMARKING
  service-policy output EGRESS-QUEUING
 end
+
